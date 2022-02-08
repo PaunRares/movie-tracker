@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Movie Tracker</title>
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<!-- in aplicatiile moderne, site-urile nu mai sunt statice (mai multe HTML-uri)
+	pentru a face un SPA(single page application), pastram in HTML un singur element(root)
+	si incarcam HTML-ul dinamic, in mai multe fisiere .js -->
+	<div id="root"></div>
+	<!-- fisierele .js se incarca in ordine!  -->
+	<!-- uitati-va mai intai in index.js. daca se apeleaza vreo functie,
+	uitati-va in fisierul .js care contine functia respectiva -->
+	<script type="text/javascript" src="./js/index.js"></script>
+	<script type="text/javascript" src="./js/header.js"></script>
+	<script type="text/javascript" src="./js/addMovieForm.js"></script>
+	<script type="text/javascript" src="./js/movie.js"></script>
+	<script type="text/javascript" src="./js/movieList.js"></script>
+	<script type="text/javascript" src="./js/sortDelButtons.js"></script>
+
+</body>
+</html>

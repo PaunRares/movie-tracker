@@ -1,0 +1,224 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Merriweather', serif;
+  background-color: #f2f2f2;
+}
+#header {
+  background-color: #202020;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 4px 9px 0px rgb(0 0 0 / 30%);
+}
+#header img {
+  width: 50px;
+  margin-left: 30px;
+}
+#header h1 {
+  color: white;
+  margin-left: 30px;
+}
+.side-bar-main {
+  display: flex;
+}
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  width: 17%;
+}
+.main {
+  width: 83%;
+  margin-top: 15px;
+}
+#addMovie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.side-bar h1 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 20px;
+  color: black;
+}
+
+
+.form-grup {
+  margin-bottom: 1em;
+  transition: all .3s;
+  width: 100%
+}
+.input-text {
+  border: 0;
+  border-bottom: 2px solid grey;
+  background: transparent;
+  outline: none;
+  transition: all .3s;
+}
+.form-label {
+  font-size: 1em;
+  display: block;
+  color: grey;
+  opacity: 1;
+  transform: translateY(-1.25em);
+  transform-origin: 0 0;
+  transition: all .3s;
+}
+.input-text::placeholder {
+  color: transparent;
+}
+.input-text:focus {
+  border-color: black;
+}
+.input-text:focus + .form-label, .input-text:not(:placeholder-shown) + .form-label {
+  transform: translateY(-2.5em) scale(.7);
+}
+.form-grup:focus-within {
+  transform: scale(1.05,1.05);
+}
+select {
+  width: 100%;
+}
+select option {
+  background: #f2f2f2;
+}
+.form-label-select {
+  font-size: 1em;
+  display: block;
+  color: grey;
+  opacity: 1;
+  transform: translateY(-1.25em);
+  transform-origin: 0 0;
+  transition: all .3s;
+}
+.input-text:focus + .form-label-select, .input-text:valid + .form-label-select {
+  transform: translateY(-2.5em) scale(.7);
+}
+.sort-button {
+  width: 60%;
+  height: 35px;
+  border: 0;
+  background: #868686ad;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px 0px 10px 0px;
+  padding: 4px 0 4px 0;
+}
+.sort-button:hover {
+  background-color:  #d1cfcf;
+}
+
+.ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+  list-style-type: none;
+  margin-top: 30px;
+}
+li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  background: white;
+  border-radius: 10px;
+  margin: 0 35px 50px 0;
+  transition: all .4s;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+li h1 {
+  font-size: 18px;
+}
+.info p{
+  font-size: 11px;
+  margin: 0 20px;
+}
+.delete-button {
+  margin: 20px 0 10px 0;
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+  background: #868686ad;
+  padding: 5px 10px 5px 10px;
+}
+li:hover {
+  transform: scale(1.1);
+}
+.delete-button:hover {
+  background-color:  #d1cfcf;
+}
+li img {
+  width: 100%;
+
+}
+.movie-img {
+  width: 40%;
+  height: 50%;
+  margin-bottom: 30px;
+}
+.title-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 50px;
+}
+.toggle {
+  display: flex;
+  align-items: center;
+}
+.toggle input {
+  -webkit-appearance: none;
+  width: 40px;
+  height: 20px;
+  position: relative;
+  background: #91939b;
+  outline: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.toggle input:checked {
+  background: #91939b;
+}
+.toggle input:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transform: scale(1.2);
+  transition: 0.5s;
+  background-image: url("../images/square2-icon.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.toggle input:checked:before{
+  left: 20px;
+  background-image: url("../images/square-icon.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.ul-list {
+  display: flex;
+  width: 95%;
+  list-style-type: none;
+  margin-top: 30px;
+  flex-direction: column;
+  align-items: center;
+
+}
+.toggle p {
+  font-size: 13px;
+  margin: 0 7px 0 7px;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
